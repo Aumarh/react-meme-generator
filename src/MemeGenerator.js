@@ -1,13 +1,11 @@
+// importing the library
 import { saveAs } from 'file-saver';
 import { useState } from 'react';
 
 export default function Memes() {
-  const [meme, setMeme] = useState('');
+  const [meme, setMeme] = useState('https://api.memegen.link/images/aag.png');
   const [top, setTop] = useState('');
   const [bottom, setBottom] = useState('');
-  // const [randomImage, setRandomImage] = useState(
-  //   'https://api.memegen.link/images/aag.png',
-  // );
 
   return (
     <>
@@ -42,12 +40,29 @@ export default function Memes() {
       </label>
       <br />
       <select>
-        <option>Select Meme</option>
+        <option>Meme template: </option>
       </select>
+      {/* <label>
+        <select
+          className="input"
+          value={setMeme}
+          onChange={(event) => {
+            setDrop(event.target.value);
+          }}
+        >
+          <option>Meme Templates</option>
+          {meme.map((template) => (
+            <option key={template.id} value={template.id}>
+              {template.name}
+            </option>
+          ))}
+        </select>
+      </label> */}
       <br />
       <label>
         Enter top text here:
         <input
+          placeholder="top text"
           value={top}
           onChange={(event) => {
             setTop(event.currentTarget.value);
@@ -58,6 +73,7 @@ export default function Memes() {
       <label>
         Enter bottom text here:
         <input
+          placeholder="bottom text"
           value={bottom}
           onChange={(event) => {
             setBottom(event.currentTarget.value);

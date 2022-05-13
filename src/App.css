@@ -1,18 +1,28 @@
 body {
-  margin: 0;
   background-color: rgba(132, 172, 206, 0.524);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
 .header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-self: center;
   justify-content: center;
   font-size: x-large;
   color: white;
   font-weight: 500;
+  text-align: center;
 }
 
 .meme {
@@ -79,11 +89,17 @@ button {
   margin-top: 1em;
   margin-left: 0.1em;
   border: 3px rgb(221, 210, 210) solid;
-  font-family: VT323, monospace;
+  /* font-family: VT323, monospace; */
+  font-family: cursive;
   font-size: 20px;
   letter-spacing: 1.5px;
   color: white;
   background: rgb(78, 22, 132);
+  transition: color 0.5s ease-in-out, transform 0.3s ease-in-out;
+  transform: translate3d(0, -5px, 5px);
+  cursor: pointer;
+  box-shadow: 0 5px 12px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
 }
 
 .meme-form > button:hover {
