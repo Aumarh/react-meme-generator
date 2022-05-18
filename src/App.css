@@ -34,6 +34,7 @@ code {
 
 .meme > img {
   width: 95%;
+  height: 95%;
   max-width: 40em;
   max-height: 40em;
   margin-bottom: 1.5em;

@@ -1,6 +1,10 @@
 import React from 'react';
 
 function Header() {
-  return <header>React Meme Generator.</header>;
+  return (
+    <header>
+      <strong>React Meme Generator.</strong>
+    </header>
+  );
 }
 export default Header;
