@@ -17,7 +17,7 @@ code {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-self: center;
+
   justify-content: center;
   font-size: x-large;
   color: white;
